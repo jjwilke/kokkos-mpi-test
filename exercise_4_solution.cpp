@@ -59,7 +59,7 @@ int main( int argc, char* argv[] )
   int S = -1;         // total size 2^22
   int nrepeat = 100;  // number of repeats of the test
 
-  MPI_Init();
+  MPI_Init(&argc, &argv);
 
   // Read command line arguments.
   for ( int i = 0; i < argc; i++ ) {
